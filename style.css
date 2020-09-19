@@ -1,0 +1,158 @@
+body {
+  text-align: center;
+  margin: 10px;
+  background-image: url("https://www.funbrain.com/assets/img/content-cards/F2qRmLhRnmebc8jJAUjr_GuessTheNumber%403x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+/* body {
+    background: #25a9fc;
+  } */
+#rabbit {
+  position: absolute;
+  right: 15%;
+  bottom: -28%;
+}
+
+.box-canvas {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 10vmin;
+  margin-bottom: 10vmin;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.backfill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24vmin;
+  width: 53vmin;
+  height: 8vmin;
+  background: #333642;
+  border-radius: 50%;
+  border: 1vmin solid #131416;
+}
+
+.rabbit {
+  position: absolute;
+  top: 0vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vmin;
+  height: 55vmin;
+  overflow: hidden;
+}
+
+.body {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25vmin;
+  height: 20vmin;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  bottom: -5vmin;
+}
+
+.head {
+  position: absolute;
+  top: 25vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vmin;
+  height: 20vmin;
+  background: white;
+  border-radius: 30% 30% 50% 50%;
+  border-bottom: 1vmin solid #c4c6ce;
+}
+
+.eye {
+  position: absolute;
+  top: 4vmin;
+  width: 3vmin;
+  height: 3vmin;
+  background: black;
+  border-radius: 50%;
+  border: 1vmin solid #24a9fc;
+}
+
+.eye.left {
+  left: 3vmin;
+}
+
+.eye.right {
+  right: 3vmin;
+}
+
+.eye::after {
+  content: "";
+  position: absolute;
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background: white;
+  border-radius: 50%;
+  bottom: 0;
+}
+
+.nose {
+  position: absolute;
+  top: 11vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+  border-top: 2.5vmin solid pink;
+}
+
+.ear {
+  position: absolute;
+  width: 4vmin;
+  height: 15vmin;
+  top: -17vmin;
+  background: pink;
+  border-radius: 50% 50% 0 0;
+  border: 2vmin solid white;
+}
+
+.ear.left {
+  left: 1vmin;
+  transform: rotate(-10deg);
+  transform-origin: bottom right;
+}
+
+.ear.right {
+  right: 1vmin;
+  transform: rotate(10deg);
+  transform-origin: bottom left;
+}
+
+.paw {
+  position: absolute;
+  width: 8vmin;
+  height: 5vmin;
+  background: white;
+  border-radius: 30% 30% 50% 50%;
+  border-top: 1vmin solid #c4c6ce;
+  top: 48vmin;
+}
+
+.paw.left {
+  left: 28vmin;
+}
+
+.paw.right {
+  right: 28vmin;
+}
