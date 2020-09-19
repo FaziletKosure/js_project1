@@ -3,7 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="guessgame.css" />
+    <title>Number Guessing Game</title>
   </head>
-  <body></body>
+  <body>
+    <h1>GUESS THE NUMBER</h1>
+    <p>Find the number between 1 - 100</p>
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="CHECK" class="guessSubmit" id="submitguess" />
+      <div id="result"></div>
+    </div>
+    <div id="rabbit">
+      <div class="box-canvas">
+        <div class="backfill"></div>
+        <div class="rabbit">
+          <div class="body"></div>
+          <div class="head">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+          </div>
+        </div>
+        <div class="hat"></div>
+        <div class="paw left"></div>
+        <div class="paw right"></div>
+      </div>
+    </div>
+    <script src="guessgame.js"></script>
+  </body>
 </html>
