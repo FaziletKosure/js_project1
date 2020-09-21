@@ -1,3 +1,4 @@
+
 // random value generated 
 const guessMe = Math.floor(Math.random() * 100 + 1); 
 console.log(Math.random());
@@ -9,11 +10,26 @@ let guess = 0;
 const result=document.getElementById('result');
 const rabbit=document.getElementById('rabbit');
 const dog=document.getElementById('dog');
-document.getElementById("submitguess").onclick = function(){ 
+const checkbtn=document.getElementById("submitguess");
+window.addEventListener("keyup", function(evt) {          // Keyup -> Any key pressed
+    if (evt.keyCode == 13) {  
+        evt.preventDefault();                        // 13 for enter
+        checkbtn.click();
+    }
+  });
+
+  checkbtn.onclick = function(){ 
     // number guessed by user	 
     if(guess==5){
-        alert('Game Over, Try again!')
-        location.reload()
+        result.innerHTML=(`<h2 id="answer">Game over! &#128532  Maybe next time &#128521</h2>`); 
+        dog.style.visibility="visible";
+        dog.style.transitionDuration="1000ms";
+        if (window.matchMedia("(min-width: 600px)").matches) {
+            dog.style.transform= "scale(1.2) translate(-35%, -20%)";
+        } else {
+            dog.style.transform= "scale(1.0) translate(-5%, 15%)";
+        }
+        setTimeout("location.reload(true);", 5000);
         return;
     }
     const inputVal = document.getElementById("guessField").value; 

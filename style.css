@@ -1,7 +1,7 @@
 body {
   text-align: center;
   margin: 10px;
-  background-image: url("https://www.funbrain.com/assets/img/content-cards/F2qRmLhRnmebc8jJAUjr_GuessTheNumber%403x.png");
+  background-image: url("./img/bgrd.png.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #8d6525;
@@ -23,8 +23,14 @@ div {
     background: #25a9fc;
   } */
 #dog {
-  border: solid 2px;
-  border-radius: 5%;
+  border: solid 2px olive;
+  border-radius: 1%;
+  margin: 0 auto;
+  position: absolute;
+  left: 30%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  width: 150px;
 }
 #rabbit {
   position: absolute;
@@ -185,5 +191,8 @@ div {
     top: -106px;
     left: 182px;
     visibility: hidden;
+  }
+  #dog {
+    top: 120px;
   }
 }
