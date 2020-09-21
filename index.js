@@ -1,7 +1,6 @@
 
 // random value generated 
 const guessMe = Math.floor(Math.random() * 100 + 1); 
-console.log(Math.random());
 console.log(guessMe);
         
 // counting the number of guesses 
@@ -35,7 +34,6 @@ window.addEventListener("keyup", function(evt) {          // Keyup -> Any key pr
     const inputVal = document.getElementById("guessField").value; 
     if(inputVal<0||isNaN(inputVal)){
        alert("Please enter only positive numbers between 1-100"); 
-     
     }
         
     if(inputVal == guessMe) {

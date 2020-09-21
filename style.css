@@ -184,7 +184,7 @@ div {
     justify-content: center;
     vertical-align: middle;
     align-content: center;
-    top: 170px;
+    top: 79px;
   }
   #rabbit {
     position: absolute;
@@ -194,5 +194,8 @@ div {
   }
   #dog {
     top: 120px;
+  }
+  #guessField {
+    width: 100px;
   }
 }
