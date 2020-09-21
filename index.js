@@ -8,6 +8,7 @@ console.log(guessMe);
 let guess = 0; 
 const result=document.getElementById('result');
 const rabbit=document.getElementById('rabbit');
+const dog=document.getElementById('dog');
 document.getElementById("submitguess").onclick = function(){ 
     // number guessed by user	 
     if(guess==5){
@@ -30,9 +31,8 @@ document.getElementById("submitguess").onclick = function(){
         if (window.matchMedia("(min-width: 600px)").matches) {
             rabbit.style.transform= "scale(1.2) translate(-5%, -20%)";
         } else {
-            rabbit.style.transform= "scale(1.0) translate(25%, 20%)";
+            rabbit.style.transform= "scale(1.0) translate(20%, 15%)";
         }
-      
        
     } else if(inputVal > guessMe) {	/* if guessed number is greater 
                         than actual number*/ 
