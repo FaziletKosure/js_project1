@@ -47,6 +47,8 @@ window.addEventListener("keyup", function(evt) {          // Keyup -> Any key pr
         } else {
             rabbit.style.transform= "scale(1.0) translate(20%, 15%)";
         }
+        setTimeout("location.reload(true);", 5000);
+        return;
        
     } else if(inputVal > guessMe) {	/* if guessed number is greater 
                         than actual number*/ 
