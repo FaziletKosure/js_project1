@@ -10,7 +10,7 @@ const result=document.getElementById('result');
 const rabbit=document.getElementById('rabbit');
 const dog=document.getElementById('dog');
 const checkbtn=document.getElementById("submitguess");
-window.addEventListener("keyup", function(evt) {          // Keyup -> Any key pressed
+document.getElementById('guessField').addEventListener("keyup", function(evt) {          // Keyup -> Any key pressed
     if (evt.keyCode == 13) {  
         evt.preventDefault();                        // 13 for enter
         checkbtn.click();
